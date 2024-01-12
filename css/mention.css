@@ -1,0 +1,282 @@
+* {
+    list-style: none;
+    text-decoration: none;
+}
+
+
+body {
+    max-width: 100vw;
+    margin: 0;
+
+}
+
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: yellow;
+}
+
+.bandeau {
+    display: flex;
+    width: 100%;
+}
+
+.logo{
+    width: 14%;
+    background-color:yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.logo img{
+    width: 65%;
+}
+
+.logo p{
+    font-family: sans-serif;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.titre {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #FFFFFF;
+    padding-right: 1em;
+    text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15);
+    font-size: 36px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+
+}
+
+nav a {
+    font-size: large;
+    font-family: sans-serif;
+    padding-right: 1em;
+    color: #6a6969;
+    transition: 0.5s;
+}
+
+nav a:hover {
+    color: white;
+    text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15);
+    font-size: 20px;
+}
+
+#navList {
+    display: none;
+}
+
+#navList ul {
+    border: solid black;
+    border-radius: 0.3rem;
+    padding: 0%;
+}
+
+
+#navList ul li {
+    padding: 0.2rem;
+    border: 3px solid black;
+    width: 30px;
+
+}
+
+/*********************MAIN*************************/
+
+main {
+    max-width: 100%;
+    height: auto;
+    color: navy;
+    padding: 2em;
+    font-family: sans-serif;
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#mention{
+    text-align: left;
+    width: 70%;
+    padding-left: 6em;
+}
+#mention ul{
+    padding: 0;
+}
+
+
+span{
+    font-weight: bold;
+}
+
+.saut{
+    margin-bottom: 1em;
+}
+
+/*******************FOOTER**********************/
+footer{
+    height: auto;
+    color: white;
+    display: flex;
+    padding-bottom: 2em;
+    background: url(../img/foot.jpg);
+    background-position: bottom;
+    background-size: 500px;
+}
+footer h3 i{
+    padding-right: 1em;
+}
+
+footer h2{
+    padding-right: 1em;
+}
+
+footer h2 i{
+    margin: 1em;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer li{
+    padding: 0.5em;
+    font-size: 18px;
+}
+
+footer li i{
+    padding-right: 0.5em;
+}
+
+footer li a{
+    color: white;
+    transition: all 0.4s;
+}
+
+
+
+/************************ Mon screen ***********************/
+@media screen and (max-width: 900px) {
+
+
+
+    .bandeau {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo {
+        background-color: white;
+        width: 100%;
+    }
+
+    .logo img {
+        width: 20%;
+    }
+
+    .titre{
+        width: 100%;
+        text-align: center;
+        flex-direction: initial;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    #navAffiche{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background: black;
+        border-radius: 0 0 0 5em;
+        height: 400px;
+        top: 0;
+        position: absolute;
+        margin-left: -5em;
+    }
+    
+    .disp{
+        display: none;
+        padding-right: 2em;
+        padding-left: 2em;
+    }
+
+    #navList {
+        margin-left: 0%;
+        position: unset;
+        display: block;
+    }
+
+    h1 {
+        font-size: 200%;
+    }
+
+    main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h2{
+        font-size: 22px;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+
+    h1 {
+        font-size: 150%;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+
+    
+    #navAffiche{
+        margin-left: -3em;
+    }
+   
+    /******************footer***************/
+
+    h2{
+        font-size: 20px;
+    }
+
+    .container2{
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+
+    .titre {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        margin: 1em;
+    }
+    #mention{
+        display: contents;
+    }
+
+}
